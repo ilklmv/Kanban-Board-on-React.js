@@ -1,3 +1,4 @@
+// components/Task.js
 import React from 'react';
 
 const Task = ({ title, description, status }) => {

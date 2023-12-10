@@ -1,5 +1,6 @@
+// components/KanbanBoard.js
 import React from 'react';
-import TaskList from './components/taskList';
+import TaskList from './taskList';
 
 const KanbanBoard = ({ tasks }) => {
   const backlogTasks = tasks.filter(task => task.status === 'Backlog');

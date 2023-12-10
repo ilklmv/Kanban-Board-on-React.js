@@ -1,13 +1,23 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-import React from "react";
-import Header from "./components/header/header";
-import KanbanBoard from "./components/canbanBoard";
+// App.js
+import React from 'react';
+import Header from './components/header/header';
+import KanbanBoard from './components/kanbanBoard';
+import Footer from './components/footer/footer';
+import './components/header/header.css';
+import './components/footer/footer.css';
 
 const App = () => {
-  const Task = [
+  // Предполагаем, что у вас есть список задач
+  const tasks = [
     { id: 1, title: 'Task 1', description: 'Description 1', status: 'Backlog' },
+    // Другие задачи...
   ];
+
+  const activeTasks = tasks.filter(task => task.status !== 'Finished').length;
+  const finishedTasks = tasks.filter(task => task.status === 'Finished').length;
+
+  const author = 'Your Name'; // Замените на ваше имя
+  const year = new Date().getFullYear();
 
   return (
     <div>
@@ -15,7 +25,12 @@ const App = () => {
       <main>
         <KanbanBoard tasks={tasks} />
       </main>
-      <footer>Footer content</footer>
+      <Footer
+        activeTasks={activeTasks}
+        finishedTasks={finishedTasks}
+        author={author}
+        year={year}
+      />
     </div>
   );
 };

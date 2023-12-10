@@ -1,5 +1,6 @@
+// components/TaskList.js
 import React from 'react';
-import Task from './components/task';
+import Task from './task';
 
 const TaskList = ({ tasks, status }) => {
   return (
