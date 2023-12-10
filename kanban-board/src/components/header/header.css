@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0067A3;
+}
+
+.header__title {
+    color: #FFFFFF;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+
+.header__user-menu {
+    width: 64px;
+    height: 40px;
+    margin-top: 7px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.arrow-down {
+    width: 12px;
+    height: 7.42px;
+}
