@@ -5,6 +5,7 @@ import KanbanBoard from './components/kanbanBoard';
 import Footer from './components/footer/footer';
 import './components/header/header.css';
 import './components/footer/footer.css';
+import './components/backlog/backLog.css';
 
 const App = () => {
   // Предполагаем, что у вас есть список задач
