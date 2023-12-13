@@ -10,7 +10,8 @@ import './components/backlog/backLog.css';
 const App = () => {
   // Предполагаем, что у вас есть список задач
   const tasks = [
-    { id: 1, title: 'Task 1', description: 'Description 1', status: 'Backlog' },
+    { id: 1, title: 'Card 1', description: 'Login page – performance issues', status: 'Backlog' },
+    { id: 2, title: 'Card 2', description: 'Sprint bugfix', status: 'Backlog' },
     // Другие задачи...
   ];
 

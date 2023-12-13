@@ -1,7 +1,9 @@
 .task-list {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
   
 .task {
@@ -9,7 +11,7 @@
     padding: 1rem;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 0 200px;
+    flex: 0 0 calc(33.333% - 1rem);
     margin-bottom: 1rem;
 }
   
