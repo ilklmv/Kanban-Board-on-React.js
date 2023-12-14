@@ -6,6 +6,7 @@ import Footer from './components/footer/footer';
 import './components/header/header.css';
 import './components/footer/footer.css';
 import './components/backlog/backLog.css';
+//import './components/ready/ready.css';
 
 const App = () => {
   // Предполагаем, что у вас есть список задач
