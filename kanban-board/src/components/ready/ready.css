@@ -29,7 +29,7 @@
     overflow: hidden; /* Прячем содержимое, которое не видно из-за максимальной высоты */
 }
 
-.ready__container .add-task button {
+.ready__container {
     margin: 1rem 1rem;
     display: flex;
     gap: 1rem;
