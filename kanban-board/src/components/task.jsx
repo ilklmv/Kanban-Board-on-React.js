@@ -1,10 +1,11 @@
 import React from 'react';
 import './task.css';
 
-const Task = ({ title, description, status }) => {
+const Task = ({ task }) => {
+  console.log('task in Task:', task);
   return (
-    <div>
-      <p>{description}</p>
+    <div className='task'>
+      <p>{task.description}</p>
     </div>
   );
 };

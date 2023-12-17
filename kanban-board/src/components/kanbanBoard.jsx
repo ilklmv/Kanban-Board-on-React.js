@@ -2,17 +2,15 @@
 import React from 'react';
 import Backlog from './backlog/backLog';
 import Ready from './ready/ready';
-//import InProgress from './inProgress/inProgress';
 import './kanbanBoard.css';
 import InProgress from './inProgress/inProgress';
 import Finished from './Finished/finished';
-//import TaskList from './taskList';
 
-const KanbanBoard = ({ tasks }) => {
+const KanbanBoard = ({ tasks, setTasks}) => {
 
   return (
     <div className='kanbanBoard__container'>
-      <Backlog tasks={tasks} />
+      <Backlog tasks={tasks} setTasks={setTasks} />
       <Ready tasks={tasks} />
       <InProgress tasks={tasks} />
       <Finished tasks={tasks} />
